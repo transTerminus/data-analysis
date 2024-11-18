@@ -4,6 +4,9 @@ on:
     branches:
       - master 
       - main
+  # 每天运行一次
+  schedule:
+    - cron: '0 12 * * *'  # 每天中午12点运行
 
 jobs:
   deploy:
@@ -35,19 +38,26 @@ jobs:
       - run: pip install mkdocs-material "mkdocs-material[imaging]" mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-rss-plugin  mkdocs-static-i18n[material] python-dotenv openai pdfplumber python-docx
       - run: sudo apt-get install libcairo2-dev
+
       # New steps start here
-      - name: Generate and update TOC, generate and config other things
+      - name: Generate and update
         run: |
-          .github/build.sh
-      - name: Prepare site
-        run: .github/site/prepare_site.sh
+          .github/analysis.sh
 
-      - name: Create docs directory
+      - name: Commit changes
         run: |
-          mkdir -p site
-          cp -r .github/*.yml ./
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update for modify contents" && git push)
 
-      - run: mkdocs gh-deploy --force
+      # - name: Prepare site
+      #   run: .github/site/prepare_site.sh
+
+      # - name: Create docs directory
+      #   run: |
+      #     mkdir -p site
+      #     cp -r .github/*.yml ./
+
+      # - run: mkdocs gh-deploy --force
 
       # - name: Run publish script
       #   env:

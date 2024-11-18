@@ -1,0 +1,37 @@
+[
+  {
+    "name": "新闻网页存档与资料库",
+    "url": "https://news.transchinese.org/",
+    "path": "https://news.transchinese.org/",
+    "size": 3439,
+    "last_updated": null
+  },
+  {
+    "name": "文档与精品资源主存档库",
+    "url": "https://digital.transchinese.org/",
+    "path": "https://digital.transchinese.org/",
+    "size": 13750,
+    "last_updated": null
+  },
+  {
+    "name": "性转相关漫画存档库",
+    "url": "https://comic.transchinese.org/",
+    "path": "https://comic.transchinese.org/",
+    "size": 3409,
+    "last_updated": null
+  },
+  {
+    "name": "变身文学与小说存档库（剧情向，非限制级）",
+    "url": "https://novel.transchinese.org",
+    "path": "https://novel.transchinese.org",
+    "size": 2263,
+    "last_updated": null
+  },
+  {
+    "name": "变身文学与小说存档库（限制级）",
+    "url": "https://snovel.transchinese.org",
+    "path": "https://snovel.transchinese.org",
+    "size": 3742,
+    "last_updated": null
+  }
+]
