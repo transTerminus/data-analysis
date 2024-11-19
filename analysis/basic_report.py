@@ -12,9 +12,7 @@ def generate_markdown_report(input_file, output_file):
     
     # Prepare markdown content
     markdown = [
-        "# Search Index Analysis Report",
-        f"*Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*",
-        "",
+        "# Search Index Analysis Report\n",
         "## Timeline Distribution",
         "",
         "| Year | Count |",

@@ -32,3 +32,7 @@ for index_file in index/*/search_index.yml; do
 done
 
 echo "Analysis complete. Results saved in results/"
+
+python analysis/merge_index.py
+
+echo "Merge complete. Results saved in index/combined_index.yml"
