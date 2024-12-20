@@ -1,29 +1,3 @@
-catalog.yml:
-  archived date: 未知
-  author: 未知
-  date: 未知
-  description: ./catalog
-  format: Unknown Format
-  link: 未知
-  md5: b829c4cfbe450a3fd0f8f89b0e07063c
-  region: 未知
-  size: 2710
-  tags:
-  - binary
-  type: other
-md5.yml:
-  archived date: 未知
-  author: 未知
-  date: 未知
-  description: ./md5
-  format: Unknown Format
-  link: 未知
-  md5: 38f4b9803d18679af3b547aa7af95a5d
-  region: 未知
-  size: 501104
-  tags:
-  - binary
-  type: other
 未分类中短篇/01.鬼吹灯A_page.md:
   archived date: '2024-11-14'
   author: 本物天下霸唱
